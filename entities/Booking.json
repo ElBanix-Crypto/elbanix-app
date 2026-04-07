@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "properties": {
+    "customer_name": {
+      "type": "string"
+    },
+    "customer_phone": {
+      "type": "string"
+    },
+    "service": {
+      "type": "string",
+      "enum": [
+        "Hair Styling",
+        "Braiding",
+        "Makeup",
+        "Nails",
+        "Facial"
+      ]
+    },
+    "date": {
+      "type": "string"
+    },
+    "time": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Pending",
+        "Confirmed",
+        "Cancelled",
+        "Completed"
+      ],
+      "default": "Pending"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "Booking"
+}

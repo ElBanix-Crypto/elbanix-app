@@ -1,0 +1,58 @@
+{
+  "type": "object",
+  "properties": {
+    "business_name": {
+      "type": "string"
+    },
+    "owner_name": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "whatsapp": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "business_type": {
+      "type": "string",
+      "enum": [
+        "Salon & Spa",
+        "Restaurant",
+        "Fashion Vendor",
+        "Fitness Coach",
+        "Photographer",
+        "Clinic",
+        "Other"
+      ]
+    },
+    "opening_hours": {
+      "type": "string"
+    },
+    "services": {
+      "type": "string"
+    },
+    "welcome_message": {
+      "type": "string"
+    },
+    "telegram_username": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Pending",
+        "Active",
+        "Suspended"
+      ],
+      "default": "Pending"
+    }
+  },
+  "required": [],
+  "name": "BusinessProfile"
+}

@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "business": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "New",
+        "Contacted",
+        "Onboarded"
+      ],
+      "default": "New"
+    }
+  },
+  "required": [],
+  "name": "WaitlistSignup"
+}
